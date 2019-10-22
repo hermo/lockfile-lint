@@ -35,10 +35,12 @@ describe('ParseLockfile Npm', () => {
     expect(lockfile.type).toEqual('success')
     expect(lockfile.object).toEqual(
       expect.objectContaining({
+        '@babel/cli@7.4.4': expect.any(Object),
         'debug@4.1.1': expect.any(Object),
         'ms@2.1.2': expect.any(Object),
         'ms@2.0.0': expect.any(Object),
-        'escape-html@1.0.3': expect.any(Object)
+        'escape-html@1.0.3': expect.any(Object),
+        'source-map@0.5.7': expect.any(Object)
       })
     )
   })
